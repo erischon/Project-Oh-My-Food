@@ -1,4 +1,4 @@
-# Projet Oh My Food!
+# Project Oh My Food!
 
 ### Stack
 

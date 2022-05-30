@@ -1,27 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap");
+@import "./variables.scss";
+@import "./header.css";
+@import "./main.css";
 
-:root {
-  --ff-primary: "Raleway", sans-serif;
-
-  --fw-reg: 400;
-  --fw-bold: 800;
-
-  --fs-h1: 3rem;
-  --fs-h2: 24px;
-  --fs-h3: 1.25rem;
-  --fs-body-desk: 18px;
-  --fs-body-tab: 16px;
-  --fs-body-mob: 14px;
-
-  --clr-primary: #0065fc;
-  --clr-secondary: #deebff;
-  --clr-back: #f2f2f2;
-  --clr-page: #ffffff;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
 
 html,
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 *,
@@ -48,10 +35,6 @@ a:hover {
 }
 
 img {
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  max-height: 0;
 }
 
 .container {

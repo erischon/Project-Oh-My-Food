@@ -1,0 +1,54 @@
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: #eaeaea;
+}
+
+.location i {
+  font-size: 1.1rem;
+}
+
+.location p {
+  font-weight: bold;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding: 0 2rem;
+}
+
+.hero h2 {
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
+}
+/*# sourceMappingURL=main.css.map */

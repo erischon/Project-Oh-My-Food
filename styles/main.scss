@@ -141,6 +141,14 @@
 
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem;
+
+      &.img--horizontal {
+        object-position: 60% 90%;
+      }
+
+      &.img--vertical {
+        object-position: 50% 60%;
+      }
     }
 
     .card__footer {

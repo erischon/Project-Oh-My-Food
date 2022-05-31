@@ -156,6 +156,16 @@
   border-top-right-radius: 1rem;
 }
 
+.restaurants .restaurant__card img.img--horizontal {
+  -o-object-position: 60% 90%;
+     object-position: 60% 90%;
+}
+
+.restaurants .restaurant__card img.img--vertical {
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
+}
+
 .restaurants .restaurant__card .card__footer {
   display: -webkit-box;
   display: -ms-flexbox;

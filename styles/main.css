@@ -10,7 +10,6 @@
           align-items: baseline;
   gap: 1rem;
   padding: 1rem;
-  width: 100%;
   background-color: #eaeaea;
 }
 
@@ -118,6 +117,82 @@
   height: 1.25rem;
   border-radius: 50%;
   font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background-color: #f6f6f6;
+}
+
+.restaurants .restaurant__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+}
+
+.restaurants .restaurant__card img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.restaurants .restaurant__card .card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.restaurants .restaurant__card .card__footer .card__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.restaurants .restaurant__card .card__footer .card__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.restaurants .restaurant__card .card__footer .card__like i {
+  font-size: 1.4rem;
+}
+
+.restaurants .restaurant__card .card__footer .card__like i:hover {
+  color: #9356dc;
   font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

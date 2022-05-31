@@ -141,10 +141,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   border-radius: 1rem;
   background-color: white;
   -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
   box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+}
+
+.restaurants .restaurant__card .card__new {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #98e2cf;
+  color: #278b72;
+  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
 }
 
 .restaurants .restaurant__card img {

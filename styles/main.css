@@ -63,8 +63,8 @@
   border: none;
   background: #9356dc;
   background: linear-gradient(343deg, rgba(147, 86, 220, 0.7) 40%, rgba(255, 121, 218, 0.9) 100%);
-  -webkit-box-shadow: 0 0 6px rgba(77, 77, 77, 0.5);
-  box-shadow: 0 0 6px rgba(77, 77, 77, 0.5);
+  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
 }
 
 .steps {
@@ -95,8 +95,8 @@
   font-size: 1.25rem;
   font-weight: bold;
   background-color: #f6f6f6;
-  -webkit-box-shadow: 0 0 6px rgba(77, 77, 77, 0.5);
-  box-shadow: 0 0 6px rgba(77, 77, 77, 0.5);
+  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
 }
 
 .steps .steps__box .step__index {

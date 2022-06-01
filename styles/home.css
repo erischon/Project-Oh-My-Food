@@ -78,6 +78,11 @@
   padding: 2rem 1rem;
 }
 
+.steps h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .steps .steps__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,6 +136,11 @@
   gap: 1.5rem;
   padding: 2rem 1rem;
   background-color: #f6f6f6;
+}
+
+.restaurants h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .restaurants .restaurant__card {
@@ -203,6 +213,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.5rem;
+}
+
+.restaurants .restaurant__card .card__footer .card__desc h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .restaurants .restaurant__card .card__footer .card__like {

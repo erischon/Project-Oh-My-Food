@@ -465,10 +465,6 @@ footer ul li i {
     -webkit-transform: translateX(-1000px);
             transform: translateX(-1000px);
   }
-  50% {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
-  }
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -479,10 +475,6 @@ footer ul li i {
   0% {
     -webkit-transform: translateX(-1000px);
             transform: translateX(-1000px);
-  }
-  50% {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
   }
   100% {
     -webkit-transform: translateX(0);

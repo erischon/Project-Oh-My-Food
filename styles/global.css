@@ -405,8 +405,6 @@ footer ul li i {
   -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
   box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
   background-color: white;
-  -webkit-animation: slideMe 1000ms;
-          animation: slideMe 1000ms;
 }
 
 .menu__container .menu__top .menu__item .item__desc,
@@ -458,6 +456,21 @@ footer ul li i {
   background: linear-gradient(343deg, rgba(147, 86, 220, 0.7) 40%, rgba(255, 121, 218, 0.9) 100%);
   -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
   box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+}
+
+.menu__top {
+  -webkit-animation: slideMe 1000ms;
+          animation: slideMe 1000ms;
+}
+
+.menu__middle {
+  -webkit-animation: slideMe 1500ms;
+          animation: slideMe 1500ms;
+}
+
+.menu__bottom {
+  -webkit-animation: slideMe 2000ms;
+          animation: slideMe 2000ms;
 }
 
 @-webkit-keyframes slideMe {

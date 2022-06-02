@@ -73,8 +73,6 @@
       box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
       background-color: white;
 
-      animation: slideMe 1000ms;
-
       .item__desc {
         display: flex;
         flex-direction: column;
@@ -122,6 +120,19 @@
     -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
     box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
   }
+}
+
+// Animations
+.menu__top {
+  animation: slideMe 1000ms;
+}
+
+.menu__middle {
+  animation: slideMe 1500ms;
+}
+
+.menu__bottom {
+  animation: slideMe 2000ms;
 }
 
 @keyframes slideMe {

@@ -73,6 +73,8 @@
       box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
       background-color: white;
 
+      animation: slideMe 1000ms;
+
       .item__desc {
         display: flex;
         flex-direction: column;
@@ -119,5 +121,19 @@
 
     -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
     box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
+  }
+}
+
+@keyframes slideMe {
+  0% {
+    transform: translateX(-1000px) opacity;
+  }
+
+  50% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }

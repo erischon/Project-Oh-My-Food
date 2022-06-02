@@ -462,8 +462,8 @@ footer ul li i {
 
 @-webkit-keyframes slideMe {
   0% {
-    -webkit-transform: translateX(-1000px) opacity;
-            transform: translateX(-1000px) opacity;
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   50% {
     -webkit-transform: translateX(-500px);
@@ -477,8 +477,8 @@ footer ul li i {
 
 @keyframes slideMe {
   0% {
-    -webkit-transform: translateX(-1000px) opacity;
-            transform: translateX(-1000px) opacity;
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   50% {
     -webkit-transform: translateX(-500px);

@@ -63,36 +63,82 @@
 
     .menu__item {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+      // grid-template-columns: 3;
+      // justify-content: space-between;
+      // align-items: flex-end;
 
       padding: 1rem;
       border-radius: 20px;
+      max-width: 100%;
 
       -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
       box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
       background-color: white;
 
-      .item__desc {
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
+      overflow: hidden;
+      cursor: pointer;
 
-        .item__name {
+      .item__desc {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+
+        .desc__title {
           font-size: 1.1rem;
           font-weight: bold;
           text-transform: capitalize;
+
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
 
-        .item__desc {
+        .desc__subtitle {
           font-size: 0.9rem;
           font-weight: 300;
           text-transform: capitalize;
+
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
 
       .item__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
         font-weight: bold;
+      }
+
+      .item__validation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 4rem;
+        margin: -1rem -5rem -1rem -1rem;
+
+        background-color: $clr-tertiary;
+        transition: 0.5s all;
+      }
+
+      &:hover .item__validation {
+        margin-right: -1rem;
+      }
+
+      .validation__checkIcon {
+        .fa-check {
+          font-size: 1rem;
+          background-color: white;
+          color: $clr-tertiary;
+          border-radius: 50%;
+          padding: 0.25rem;
+        }
+      }
+
+      &:hover {
       }
     }
   }
@@ -137,6 +183,7 @@
 
 @keyframes slideMe {
   0% {
+    opacity: 0;
     transform: translateX(-1000px);
   }
 
@@ -144,15 +191,17 @@
   //   transform: translateX(-750px);
   // }
 
-  // 50% {
-  //   transform: translateX(-500px);
-  // }
+  50% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
 
   // 75% {
   //   transform: translateX(-250px);
   // }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }

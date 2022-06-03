@@ -394,7 +394,6 @@ footer ul li i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem;
   border-radius: 20px;
   max-width: 100%;
   -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
@@ -407,12 +406,10 @@ footer ul li i {
 .menu__container .menu__top .menu__item .item__desc,
 .menu__container .menu__middle .menu__item .item__desc,
 .menu__container .menu__bottom .menu__item .item__desc {
+  padding: 1rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .menu__container .menu__top .menu__item .item__desc .desc__title,
@@ -443,13 +440,13 @@ footer ul li i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   font-weight: bold;
+  margin-left: auto;
+  padding: 1rem;
+  padding-right: 2rem;
 }
 
 .menu__container .menu__top .menu__item .item__validation,
@@ -464,8 +461,8 @@ footer ul li i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 4rem;
-  margin: -1rem -5rem -1rem -1rem;
+  width: 6rem;
+  margin-right: -6rem;
   background-color: #99e2d0;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -474,7 +471,7 @@ footer ul li i {
 .menu__container .menu__top .menu__item:hover .item__validation,
 .menu__container .menu__middle .menu__item:hover .item__validation,
 .menu__container .menu__bottom .menu__item:hover .item__validation {
-  margin-right: -1rem;
+  margin-right: 0;
 }
 
 .menu__container .menu__top .menu__item .validation__checkIcon .fa-check,

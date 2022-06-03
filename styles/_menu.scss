@@ -67,7 +67,7 @@
       // justify-content: space-between;
       // align-items: flex-end;
 
-      padding: 1rem;
+      // padding: 1rem;
       border-radius: 20px;
       max-width: 100%;
 
@@ -75,14 +75,19 @@
       box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
       background-color: white;
 
+      // & > * {
+      //   border: solid 1px black;
+      // }
+
       overflow: hidden;
       cursor: pointer;
 
       .item__desc {
+        padding: 1rem;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        flex: 1;
+        // flex: 1;
 
         .desc__title {
           font-size: 1.1rem;
@@ -107,9 +112,11 @@
 
       .item__price {
         display: flex;
-        justify-content: flex-end;
         align-items: flex-end;
         font-weight: bold;
+        margin-left: auto;
+        padding: 1rem;
+        padding-right: 2rem;
       }
 
       .item__validation {
@@ -117,15 +124,15 @@
         justify-content: center;
         align-items: center;
 
-        width: 4rem;
-        margin: -1rem -5rem -1rem -1rem;
+        width: 6rem;
+        margin-right: -6rem;
 
         background-color: $clr-tertiary;
         transition: 0.5s all;
       }
 
       &:hover .item__validation {
-        margin-right: -1rem;
+        margin-right: 0;
       }
 
       .validation__checkIcon {

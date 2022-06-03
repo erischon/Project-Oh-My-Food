@@ -459,9 +459,9 @@ footer ul li i {
   padding-right: 2rem;
 }
 
-.menu__container .menu__top .menu__item .item__validation,
-.menu__container .menu__middle .menu__item .item__validation,
-.menu__container .menu__bottom .menu__item .item__validation {
+.menu__container .menu__top .menu__item .item__check,
+.menu__container .menu__middle .menu__item .item__check,
+.menu__container .menu__bottom .menu__item .item__check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,24 +478,24 @@ footer ul li i {
   transition: 0.5s all;
 }
 
-.menu__container .menu__top .menu__item:hover .item__validation,
-.menu__container .menu__middle .menu__item:hover .item__validation,
-.menu__container .menu__bottom .menu__item:hover .item__validation {
+.menu__container .menu__top .menu__item:hover .item__check,
+.menu__container .menu__middle .menu__item:hover .item__check,
+.menu__container .menu__bottom .menu__item:hover .item__check {
   margin-right: 0;
 }
 
-.menu__container .menu__top .menu__item .validation__checkIcon,
-.menu__container .menu__middle .menu__item .validation__checkIcon,
-.menu__container .menu__bottom .menu__item .validation__checkIcon {
+.menu__container .menu__top .menu__item .check__icon,
+.menu__container .menu__middle .menu__item .check__icon,
+.menu__container .menu__bottom .menu__item .check__icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
 
-.menu__container .menu__top .menu__item .validation__checkIcon .fa-check,
-.menu__container .menu__middle .menu__item .validation__checkIcon .fa-check,
-.menu__container .menu__bottom .menu__item .validation__checkIcon .fa-check {
+.menu__container .menu__top .menu__item .check__icon .fa-check,
+.menu__container .menu__middle .menu__item .check__icon .fa-check,
+.menu__container .menu__bottom .menu__item .check__icon .fa-check {
   font-size: 1.25rem;
   font-weight: bold;
   background-color: white;
@@ -504,9 +504,9 @@ footer ul li i {
   padding: 0.5rem;
 }
 
-.menu__container .menu__top .menu__item:hover .validation__checkIcon,
-.menu__container .menu__middle .menu__item:hover .validation__checkIcon,
-.menu__container .menu__bottom .menu__item:hover .validation__checkIcon {
+.menu__container .menu__top .menu__item:hover .check__icon,
+.menu__container .menu__middle .menu__item:hover .check__icon,
+.menu__container .menu__bottom .menu__item:hover .check__icon {
   -webkit-transform: rotate(0);
           transform: rotate(0);
 }

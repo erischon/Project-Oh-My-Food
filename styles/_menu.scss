@@ -120,7 +120,7 @@
         padding-right: 2rem;
       }
 
-      .item__validation {
+      .item__check {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -132,11 +132,11 @@
         transition: 0.5s all;
       }
 
-      &:hover .item__validation {
+      &:hover .item__check {
         margin-right: 0;
       }
 
-      .validation__checkIcon {
+      .check__icon {
         transform: rotate(180deg);
         transition-duration: 0.5s;
 
@@ -150,7 +150,7 @@
         }
       }
 
-      &:hover .validation__checkIcon {
+      &:hover .check__icon {
         transform: rotate(0);
       }
     }

@@ -321,6 +321,12 @@ footer ul li i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -350,7 +356,11 @@ footer ul li i {
 .menu__container .menu__head .menu__title h3 {
   font-family: "Shrikhand", cursive;
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+}
+
+.menu__container .menu__head .card__like {
+  font-size: 1.5rem;
 }
 
 .menu__container .menu__top,
@@ -474,14 +484,31 @@ footer ul li i {
   margin-right: 0;
 }
 
+.menu__container .menu__top .menu__item .validation__checkIcon,
+.menu__container .menu__middle .menu__item .validation__checkIcon,
+.menu__container .menu__bottom .menu__item .validation__checkIcon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 .menu__container .menu__top .menu__item .validation__checkIcon .fa-check,
 .menu__container .menu__middle .menu__item .validation__checkIcon .fa-check,
 .menu__container .menu__bottom .menu__item .validation__checkIcon .fa-check {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
   background-color: white;
   color: #99e2d0;
   border-radius: 50%;
-  padding: 0.25rem;
+  padding: 0.5rem;
+}
+
+.menu__container .menu__top .menu__item:hover .validation__checkIcon,
+.menu__container .menu__middle .menu__item:hover .validation__checkIcon,
+.menu__container .menu__bottom .menu__item:hover .validation__checkIcon {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .menu__container button {

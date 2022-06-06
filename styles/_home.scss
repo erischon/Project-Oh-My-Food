@@ -43,59 +43,66 @@
 }
 
 .steps {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-
-  padding: 2rem 1rem;
-
-  h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .steps__box {
+  &__container {
     display: flex;
-    align-items: center;
-    position: relative;
+    flex-direction: column;
     gap: 1.5rem;
 
-    padding: 1rem 1.75rem;
-    margin-left: 0.5rem;
-    border: none;
-    border-radius: 15px;
+    padding: 2rem 1rem;
 
-    font-size: 1.25rem;
-    font-weight: bold;
-
-    background-color: #f6f6f6;
-    -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
-    box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
-
-    .step__icon {
-    }
-
-    .step__desc {
-    }
-
-    .step__index {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-
-      padding: 0.75rem;
-
-      background-color: #9356dc;
-
-      left: -12px;
-      color: #eee;
-
-      width: 1.25rem;
-      height: 1.25rem;
-      border-radius: 50%;
-      font-size: 0.85rem;
+    h2 {
+      font-size: 1.5rem;
       font-weight: bold;
+    }
+
+    .steps__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .steps__box {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 1.5rem;
+
+        padding: 1rem 1.75rem;
+        margin-left: 0.5rem;
+        border: none;
+        border-radius: 15px;
+
+        font-size: 1.25rem;
+        font-weight: bold;
+
+        background-color: #f6f6f6;
+        -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
+        box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
+
+        .step__icon {
+        }
+
+        .step__desc {
+        }
+
+        .step__index {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+
+          padding: 0.75rem;
+
+          background-color: #9356dc;
+
+          left: -12px;
+          color: #eee;
+
+          width: 1.25rem;
+          height: 1.25rem;
+          border-radius: 50%;
+          font-size: 0.85rem;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
@@ -205,6 +212,14 @@
 /*=============== For tablet devices ===============*/
 
 @media screen and (min-width: 640px) {
+  .steps {
+    .steps__container {
+      .steps__wrapper {
+        flex-direction: row;
+        gap: 16px;
+      }
+    }
+  }
   .restaurants__container {
     padding: 4rem 2rem;
 
@@ -217,6 +232,18 @@
 /*=============== For mobile devices ===============*/
 
 @media screen and (min-width: 1024px) {
+  .steps {
+    .steps__container {
+      flex-direction: row;
+      align-items: center;
+
+      .steps__wrapper {
+        display: flex;
+        gap: 16px;
+      }
+    }
+  }
+
   .restaurants__container {
     max-width: 1024px;
     margin: 0 auto;

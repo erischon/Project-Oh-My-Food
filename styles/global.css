@@ -338,7 +338,7 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-.steps {
+.steps__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,12 +350,23 @@ button:hover {
   padding: 2rem 1rem;
 }
 
-.steps h2 {
+.steps__container h2 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.steps .steps__box {
+.steps__container .steps__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.steps__container .steps__wrapper .steps__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +386,7 @@ button:hover {
   box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
 }
 
-.steps .steps__box .step__index {
+.steps__container .steps__wrapper .steps__box .step__index {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,6 +532,13 @@ button:hover {
 
 /*=============== For tablet devices ===============*/
 @media screen and (min-width: 640px) {
+  .steps .steps__container .steps__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 16px;
+  }
   .restaurants__container {
     padding: 4rem 2rem;
   }
@@ -532,6 +550,21 @@ button:hover {
 
 /*=============== For mobile devices ===============*/
 @media screen and (min-width: 1024px) {
+  .steps .steps__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .steps .steps__container .steps__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+  }
   .restaurants__container {
     max-width: 1024px;
     margin: 0 auto;

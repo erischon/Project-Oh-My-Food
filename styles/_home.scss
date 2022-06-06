@@ -40,27 +40,6 @@
     padding: 0 0.5rem;
     margin-bottom: 1rem;
   }
-
-  button {
-    padding: 1rem 1.5rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-
-    border-radius: 3rem;
-    border: none;
-
-    background: rgb(147, 86, 220);
-    background: linear-gradient(
-      343deg,
-      rgba(147, 86, 220, 0.7) 40%,
-      rgba(255, 121, 218, 0.9) 100%
-    );
-
-    -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
-    box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
-  }
 }
 
 .steps {

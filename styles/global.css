@@ -70,6 +70,28 @@ a:hover {
   }
 }
 
+button {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  background: #9356dc;
+  background: linear-gradient(343deg, rgba(147, 86, 220, 0.7) 40%, rgba(255, 121, 218, 0.9) 100%);
+  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+}
+
+button:hover {
+  background: rgba(147, 86, 220, 0.8);
+  background: linear-gradient(343deg, rgba(147, 86, 220, 0.5) 40%, rgba(255, 121, 218, 0.7) 100%);
+  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.7);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
 .loader__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,20 +375,6 @@ footer ul li i {
   font-size: 1.25rem;
   padding: 0 0.5rem;
   margin-bottom: 1rem;
-}
-
-.hero button {
-  padding: 1rem 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
-  border-radius: 3rem;
-  border: none;
-  background: #9356dc;
-  background: linear-gradient(343deg, rgba(147, 86, 220, 0.7) 40%, rgba(255, 121, 218, 0.9) 100%);
-  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
-  box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
 }
 
 .steps {
@@ -750,20 +758,9 @@ footer ul li i {
           transform: rotate(0);
 }
 
-.menu__container button {
+.menu__container .button__menu {
   width: 50%;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  color: white;
-  border-radius: 3rem;
-  border: none;
-  background: #9356dc;
-  background: linear-gradient(343deg, rgba(147, 86, 220, 0.7) 40%, rgba(255, 121, 218, 0.9) 100%);
-  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
-  box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
 }
 
 .menu__top {

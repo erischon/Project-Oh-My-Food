@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+
+html,
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hardBlue);
+}
+
+img {
+}
+
+.container {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+/*=============== For tablet devices ===============*/
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: var(--fs-body-tab);
+  }
+}
+
+/*=============== For mobile devices ===============*/
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: var(--fs-body-mob);
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

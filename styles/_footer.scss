@@ -3,9 +3,11 @@ footer {
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
-
   background-color: #353535;
   color: white;
+
+  .footer__container {
+  }
 
   h2 {
     font-family: "Shrikhand", cursive;

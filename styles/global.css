@@ -45,9 +45,14 @@ a:hover {
 }
 
 /*=============== For tablet devices ===============*/
-@media screen and (max-width: 992px) {
-  body {
-    font-size: var(--fs-body-tab);
+@media screen and (min-width: 640px) {
+  header {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+  footer {
+    max-width: 728px;
+    margin: 0 auto;
   }
 }
 
@@ -55,6 +60,13 @@ a:hover {
 @media screen and (min-width: 1024px) {
   html {
     font-size: 1.2rem;
+  }
+  header {
+    max-width: 1024px;
+  }
+  footer {
+    max-width: 1024px;
+    margin: 0 auto;
   }
 }
 
@@ -518,32 +530,23 @@ button:hover {
 
 /*=============== For tablet devices ===============*/
 @media screen and (min-width: 640px) {
-  .steps .steps__container .steps__wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 16px;
+  .location {
+    max-width: 728px;
+    margin: 0 auto;
   }
-  .restaurants__container {
-    padding: 4rem 2rem;
+  .hero {
+    max-width: 728px;
+    margin: 0 auto;
   }
-  .restaurants__container .restaurant__cards {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/*=============== For desktop devices ===============*/
-@media screen and (min-width: 1024px) {
   .steps .steps__container {
+    max-width: 728px;
+    margin: 0 auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 4rem 0;
   }
   .steps .steps__container .steps__wrapper {
     display: -webkit-box;
@@ -553,14 +556,42 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 24px;
+    gap: 2rem;
   }
-  .restaurants__container {
+  .restaurants {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+  .restaurants .restaurants__container {
+    padding: 4rem 2rem;
+  }
+  .restaurants .restaurants__container .restaurant__cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*=============== For desktop devices ===============*/
+@media screen and (min-width: 1024px) {
+  .location {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .hero {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .steps .steps__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  .restaurants {
     max-width: 1024px;
     margin: 0 auto;
     padding: 4rem 2rem;
   }
-  .restaurants__container .restaurant__cards {
+  .restaurants .restaurant__cards {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
@@ -785,10 +816,6 @@ button:hover {
 
 /*=============== For tablet devices ===============*/
 @media screen and (min-width: 640px) {
-  header {
-    max-width: 728px;
-    margin: 0 auto;
-  }
   .menu__container {
     max-width: 728px;
     margin: 0 auto;
@@ -796,17 +823,10 @@ button:hover {
   .menu__container .menu--responsive {
     padding: 2rem 4rem;
   }
-  footer {
-    max-width: 728px;
-    margin: 0 auto;
-  }
 }
 
 /*=============== For desktop devices ===============*/
 @media screen and (min-width: 1024px) {
-  header {
-    max-width: 1024px;
-  }
   .menu__container {
     max-width: 1024px;
     margin: 0 auto;
@@ -830,10 +850,6 @@ button:hover {
   }
   .button__menu {
     width: 40%;
-    margin: 0 auto;
-  }
-  footer {
-    max-width: 1024px;
     margin: 0 auto;
   }
 }

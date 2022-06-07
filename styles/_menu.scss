@@ -165,11 +165,6 @@
 /*=============== For tablet devices ===============*/
 
 @media screen and (min-width: 640px) {
-  header {
-    max-width: 728px;
-    margin: 0 auto;
-  }
-
   .menu__container {
     max-width: 728px;
     margin: 0 auto;
@@ -178,20 +173,11 @@
       padding: 2rem 4rem;
     }
   }
-
-  footer {
-    max-width: 728px;
-    margin: 0 auto;
-  }
 }
 
 /*=============== For desktop devices ===============*/
 
 @media screen and (min-width: 1024px) {
-  header {
-    max-width: 1024px;
-  }
-
   .menu__container {
     max-width: 1024px;
     margin: 0 auto;
@@ -214,11 +200,6 @@
 
   .button__menu {
     width: 40%;
-    margin: 0 auto;
-  }
-
-  footer {
-    max-width: 1024px;
     margin: 0 auto;
   }
 }

@@ -14,8 +14,8 @@
 
 #loaderPage {
   animation-name: loaderPageDisapear;
-  animation-delay: 2400ms;
-  animation-duration: 600ms;
+  animation-delay: 2000ms;
+  animation-duration: 1000ms;
   animation-fill-mode: forwards;
 }
 
@@ -65,9 +65,19 @@
   0% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.5;
+
+  25% {
+    opacity: 0.95;
   }
+
+  50% {
+    opacity: 0.85;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
   100% {
     display: none;
     z-index: -1;

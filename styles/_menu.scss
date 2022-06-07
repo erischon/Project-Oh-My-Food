@@ -22,22 +22,24 @@
       display: flex;
       justify-content: space-between;
       position: absolute;
+
       bottom: 0px;
-      background-color: #f6f6f6;
       width: 100%;
+      padding: 1.5rem 2rem;
+
+      background-color: #f6f6f6;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
-      padding: 1.5rem 1rem;
 
-      h3 {
+      h2 {
         font-family: "Shrikhand", cursive;
         text-transform: capitalize;
-        font-size: 1.6rem;
+        font-size: $fs-title;
       }
     }
 
     .card__like {
-      font-size: 1.5rem;
+      font-size: $fs-title;
     }
   }
 
@@ -55,13 +57,14 @@
       position: relative;
       text-transform: uppercase;
       margin-bottom: 0.5rem;
+      font-size: $fs-h3;
 
       &:after {
         position: absolute;
         bottom: -6px;
         left: 0;
         content: "";
-        width: 40px;
+        width: 60px;
         height: 3px;
         background-color: #99e2d0;
       }
@@ -76,10 +79,6 @@
       box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
       background-color: white;
 
-      // & > * {
-      //   border: solid 1px black;
-      // }
-
       overflow: hidden;
       cursor: pointer;
 
@@ -88,10 +87,9 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        // flex: 1;
 
         .desc__title {
-          font-size: 1.1rem;
+          font-size: $fs-h3;
           font-weight: bold;
           text-transform: capitalize;
 
@@ -103,7 +101,7 @@
         }
 
         .desc__subtitle {
-          font-size: 0.9rem;
+          font-size: $fs-small;
           font-weight: 300;
           text-transform: capitalize;
 
@@ -143,7 +141,7 @@
         transition-duration: 0.5s;
 
         .fa-check {
-          font-size: 1.25rem;
+          font-size: $fs-icon;
           font-weight: bold;
           background-color: white;
           color: $clr-tertiary;
@@ -167,11 +165,62 @@
 /*=============== For tablet devices ===============*/
 
 @media screen and (min-width: 640px) {
+  header {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+
+  .menu__container {
+    max-width: 728px;
+    margin: 0 auto;
+
+    .menu--responsive {
+      padding: 2rem 4rem;
+    }
+  }
+
+  footer {
+    max-width: 728px;
+    margin: 0 auto;
+  }
 }
 
 /*=============== For desktop devices ===============*/
 
 @media screen and (min-width: 1024px) {
+  header {
+    max-width: 1024px;
+  }
+
+  .menu__container {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    .menu--responsive {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      padding: 2rem;
+    }
+
+    .menu__top,
+    .menu__middle,
+    .menu__bottom {
+      width: 45%;
+    }
+  }
+
+  .button__menu {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  footer {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 // Animations

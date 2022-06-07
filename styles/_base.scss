@@ -55,18 +55,10 @@ img {
   }
 }
 
-/*=============== For mobile devices ===============*/
+/*=============== For desktop devices ===============*/
 
-@media screen and (max-width: 768px) {
-  body {
-    font-size: var(--fs-body-mob);
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-  }
-
-  .container {
-    margin-right: 0;
-    margin-left: 0;
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 1.2rem;
   }
 }

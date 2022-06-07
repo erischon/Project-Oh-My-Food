@@ -548,31 +548,35 @@ button:hover {
   }
 }
 
-/*=============== For mobile devices ===============*/
+/*=============== For desktop devices ===============*/
 @media screen and (min-width: 1024px) {
   .steps .steps__container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 4rem 0;
   }
   .steps .steps__container .steps__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
   }
   .restaurants__container {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 4rem 2rem;
   }
   .restaurants__container .restaurant__cards {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -792,6 +796,8 @@ button:hover {
   margin: 0 auto;
 }
 
+/*=============== For tablet devices ===============*/
+/*=============== For desktop devices ===============*/
 .menu__top {
   -webkit-animation: slideMe 1000ms;
           animation: slideMe 1000ms;

@@ -229,17 +229,20 @@
   }
 }
 
-/*=============== For mobile devices ===============*/
+/*=============== For desktop devices ===============*/
 
 @media screen and (min-width: 1024px) {
   .steps {
     .steps__container {
-      flex-direction: row;
+      justify-content: center;
       align-items: center;
+
+      padding: 4rem 0;
 
       .steps__wrapper {
         display: flex;
-        gap: 16px;
+        flex-direction: column;
+        gap: 24px;
       }
     }
   }
@@ -248,10 +251,10 @@
     max-width: 1024px;
     margin: 0 auto;
 
-    padding: 1rem;
+    padding: 4rem 2rem;
 
     .restaurant__cards {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

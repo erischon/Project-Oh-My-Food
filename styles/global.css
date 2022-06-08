@@ -92,6 +92,29 @@ button:hover {
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
+.card__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__like .fa-solid {
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+}
+
+.card__like i {
+  font-size: 1.4rem;
+}
+
+.card__like i:hover {
+  color: #9356dc;
+  -webkit-transition: color 0.7s ease-in;
+  transition: color 0.7s ease-in;
+}
+
 .loader__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,22 +544,6 @@ button:hover {
 
 .restaurants__container .restaurant__cards .restaurant__card .card__footer .card__desc h3 {
   font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.restaurants__container .restaurant__cards .restaurant__card .card__footer .card__like {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-}
-
-.restaurants__container .restaurant__cards .restaurant__card .card__footer .card__like i {
-  font-size: 1.4rem;
-}
-
-.restaurants__container .restaurant__cards .restaurant__card .card__footer .card__like i:hover {
-  color: #9356dc;
   font-weight: bold;
 }
 

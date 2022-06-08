@@ -32,3 +32,23 @@ button {
     box-shadow: 1px 1px 6px hsla(0, 0, 0, 0.7);
   }
 }
+
+.card__like {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+
+  .fa-solid {
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+  }
+
+  i {
+    font-size: 1.4rem;
+
+    &:hover {
+      color: #9356dc;
+      transition: color 0.7s ease-in;
+    }
+  }
+}

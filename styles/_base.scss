@@ -50,6 +50,15 @@ img {
 /*=============== For tablet devices ===============*/
 
 @media screen and (min-width: 640px) {
+  .page__container {
+    max-width: 728px;
+
+    margin: 0 auto;
+
+    -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
+    box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
+  }
+
   header {
     max-width: 728px;
     margin: 0 auto;
@@ -66,6 +75,15 @@ img {
 @media screen and (min-width: 1024px) {
   html {
     font-size: 1.2rem;
+  }
+
+  .page__container {
+    max-width: 1024px;
+
+    margin: 0 auto;
+
+    -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
+    box-shadow: 0px 0 6px hsla(0, 0, 30%, 0.5);
   }
 
   header {

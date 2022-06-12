@@ -431,6 +431,10 @@ button:hover {
   box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
 }
 
+.steps__container .steps__wrapper .steps__box:hover {
+  background-color: #f5edff;
+}
+
 .steps__container .steps__wrapper .steps__box .step__index {
   display: -webkit-box;
   display: -ms-flexbox;

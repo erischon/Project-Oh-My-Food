@@ -663,6 +663,8 @@ button:hover {
   max-height: 270px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 80%;
+     object-position: 50% 80%;
 }
 
 .menu__container .menu__head .menu__title {
@@ -683,7 +685,6 @@ button:hover {
 
 .menu__container .menu__head .menu__title h2 {
   font-family: "Shrikhand", cursive;
-  text-transform: capitalize;
   font-size: 1.6rem;
 }
 
@@ -756,7 +757,6 @@ button:hover {
 .menu__container .menu__bottom .menu__item .item__desc .desc__title {
   font-size: 1.1rem;
   font-weight: bold;
-  text-transform: capitalize;
   margin-bottom: 0.75rem;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -768,7 +768,6 @@ button:hover {
 .menu__container .menu__bottom .menu__item .item__desc .desc__subtitle {
   font-size: 0.85rem;
   font-weight: 300;
-  text-transform: capitalize;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

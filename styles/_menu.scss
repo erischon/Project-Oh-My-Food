@@ -16,6 +16,8 @@
       width: 100%;
       max-height: 270px;
       object-fit: cover;
+
+      object-position: 50% 80%;
     }
 
     .menu__title {
@@ -33,7 +35,6 @@
 
       h2 {
         font-family: "Shrikhand", cursive;
-        text-transform: capitalize;
         font-size: $fs-title;
       }
     }
@@ -89,7 +90,6 @@
         .desc__title {
           font-size: $fs-h3;
           font-weight: bold;
-          text-transform: capitalize;
 
           margin-bottom: 0.75rem;
 
@@ -99,7 +99,6 @@
         .desc__subtitle {
           font-size: $fs-small;
           font-weight: 300;
-          text-transform: capitalize;
 
           @include ellipsis;
         }

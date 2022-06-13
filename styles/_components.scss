@@ -17,8 +17,7 @@ button {
     rgba(255, 121, 218, 0.9) 100%
   );
 
-  -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
-  box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
+  @include shadow;
 
   &:hover {
     background: rgba(147, 86, 220, 0.8);
@@ -28,8 +27,7 @@ button {
       rgba(255, 121, 218, 0.7) 100%
     );
 
-    -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.7);
-    box-shadow: 1px 1px 6px hsla(0, 0, 0, 0.7);
+    @include shadow-dark;
   }
 }
 
@@ -47,7 +45,7 @@ button {
     font-size: 1.4rem;
 
     &:hover {
-      color: #9356dc;
+      color: $clr-primary;
       transition: color 0.7s ease-in;
     }
   }

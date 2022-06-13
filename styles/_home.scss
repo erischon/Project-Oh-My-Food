@@ -26,7 +26,7 @@
   padding-bottom: 2rem;
 
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: $clr-bg;
 
   h1 {
     font-weight: 700;
@@ -76,17 +76,11 @@
         font-size: 1.25rem;
         font-weight: bold;
 
-        background-color: #f6f6f6;
+        background-color: $clr-bg;
         @include shadow;
 
         &:hover {
           background-color: #f5edff;
-        }
-
-        .step__icon {
-        }
-
-        .step__desc {
         }
 
         .step__index {
@@ -114,7 +108,7 @@
 }
 
 .restaurants {
-  background-color: #f6f6f6;
+  background-color: $clr-bg;
 
   &__container {
     display: flex;
@@ -202,18 +196,18 @@
 
 @media screen and (min-width: 640px) {
   .location {
-    max-width: 728px;
+    max-width: $layout-max-w-tablet;
     margin: 0 auto;
   }
 
   .hero {
-    max-width: 728px;
+    max-width: $layout-max-w-tablet;
     margin: 0 auto;
   }
 
   .steps {
     .steps__container {
-      max-width: 728px;
+      max-width: $layout-max-w-tablet;
       margin: 0 auto;
 
       justify-content: center;
@@ -228,7 +222,7 @@
   }
 
   .restaurants {
-    max-width: 728px;
+    max-width: $layout-max-w-tablet;
     margin: 0 auto;
 
     .restaurants__container {
@@ -245,18 +239,18 @@
 
 @media screen and (min-width: 1024px) {
   .location {
-    max-width: 1024px;
+    max-width: $layout-max-w-desktop;
     margin: 0 auto;
   }
 
   .hero {
-    max-width: 1024px;
+    max-width: $layout-max-w-desktop;
     margin: 0 auto;
   }
 
   .steps {
     .steps__container {
-      max-width: 1024px;
+      max-width: $layout-max-w-desktop;
       margin: 0 auto;
 
       padding: 3rem 0;

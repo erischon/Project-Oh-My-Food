@@ -18,13 +18,13 @@ $breakpoint-md: 768px;
 // Mixins
 
 @mixin shadow {
-  -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
-  box-shadow: 0 0 6px hsla(0, 0, 50%, 0.5);
+  -webkit-box-shadow: 0 0 6px hsla(0, 0%, 50%, 0.5);
+  box-shadow: 0 0 6px hsla(0, 0%, 50%, 0.5);
 }
 
 @mixin shadow-dark {
-  -webkit-box-shadow: 0 0 6px hsla(0, 0, 50%, 0.7);
-  box-shadow: 1px 1px 6px hsla(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 6px hsla(0, 0%, 50%, 0.7);
+  box-shadow: 1px 1px 6px hsla(0, 0%, 0%, 0.7);
 }
 
 @mixin ellipsis {

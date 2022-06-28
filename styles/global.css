@@ -334,7 +334,7 @@ button:hover {
 }
 .restaurants__container .restaurant__cards {
   display: grid;
-  grid-template-columns: repeat(1, fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
 }
 .restaurants__container .restaurant__cards .restaurant__card {

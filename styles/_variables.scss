@@ -12,6 +12,9 @@ $fs-icon: 1.25rem;
 $layout-max-w-tablet: 728px;
 $layout-max-w-desktop: 1024px;
 
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+
 // Mixins
 
 @mixin shadow {
